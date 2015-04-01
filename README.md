@@ -1,5 +1,6 @@
 # iOS_MovingAnnotation_Demo
 annotation移动及转向动画
+-查看Demo请打开test.xcworkspace文件
 
 ### 使用教程
 
