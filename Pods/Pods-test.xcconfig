@@ -1,0 +1,7 @@
+ARCHS = $(ARCHS_STANDARD_32_BIT)
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMap3DMap"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AMap3DMap"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AMap3DMap"
+OTHER_LDFLAGS = -ObjC -lstdc++.6.0.9 -lz -framework CoreLocation -framework CoreTelephony -framework MAMapKit -framework OpenGLES -framework QuartzCore -framework Security -framework SystemConfiguration
+PODS_ROOT = ${SRCROOT}/Pods
