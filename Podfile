@@ -3,6 +3,6 @@
 
 target "test" do
 
-pod 'AMap3DMap', '~>2.3.0'
+pod 'AMap3DMap'
 
 end

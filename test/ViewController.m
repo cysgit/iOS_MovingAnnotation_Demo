@@ -118,7 +118,6 @@
     btn.frame = CGRectMake(0, self.view.frame.size.height * 0.2, 60, 20);
     btn.backgroundColor = [UIColor grayColor];
     [btn setTitle:@"move" forState:UIControlStateNormal];
-    btn.titleLabel.textColor = [UIColor whiteColor];
     [btn addTarget:self action:@selector(mov) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:btn];
