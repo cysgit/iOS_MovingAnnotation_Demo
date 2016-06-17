@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MAMapKit.h"
+#import <MAMapKit/MAMapKit.h>
 #import "MovingAnnotationView.h"
 #import "TracingPoint.h"
 #import "Util.h"
@@ -156,16 +156,16 @@
     return nil;
 }
 
-- (MAPolylineView *)mapView:(MAMapView *)mapView viewForOverlay:(id<MAOverlay>)overlay
+- (MAPolylineRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay
 {
     if ([overlay isKindOfClass:[MAPolyline class]])
     {
-        MAPolylineView *polylineView = [[MAPolylineView alloc] initWithPolyline:overlay];
+        MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
         
-        polylineView.lineWidth   = 3.f;
-        polylineView.strokeColor = [UIColor colorWithRed:0 green:0.47 blue:1.0 alpha:0.9];
+        polylineRenderer.lineWidth   = 3.f;
+        polylineRenderer.strokeColor = [UIColor colorWithRed:0 green:0.47 blue:1.0 alpha:0.9];
         
-        return polylineView;
+        return polylineRenderer;
     }
     
     return nil;
