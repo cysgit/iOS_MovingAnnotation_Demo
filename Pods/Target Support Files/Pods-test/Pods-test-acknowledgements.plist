@@ -14,8 +14,10 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+			<string>Copyright © 2014 AutoNavi. All Rights Reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>AMap3DMap</string>
 			<key>Type</key>
@@ -23,8 +25,10 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+			<string>Copyright © 2014 AutoNavi. All Rights Reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>AMapFoundation</string>
 			<key>Type</key>

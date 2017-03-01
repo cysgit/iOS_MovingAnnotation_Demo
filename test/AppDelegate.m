@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[AMapServices sharedServices] setApiKey:@"4984bb62589b5f1e542e1bc96c6f1bda"];
+    [[AMapServices sharedServices] setApiKey:@"440dc1033175fa310a34d3a752697890"];
     self.window.rootViewController =  [[ViewController alloc] init];
     [self.window makeKeyAndVisible];
 

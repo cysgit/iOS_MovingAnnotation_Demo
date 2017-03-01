@@ -74,7 +74,8 @@
         [routeAnno addObject:a];
     }
     [self.map addAnnotations:routeAnno];
-    [self.map showAnnotations:routeAnno animated:NO];
+    [self.map addAnnotation:routeAnno[0]];
+    [self.map showAnnotations:routeAnno animated:YES];
 
 }
 
@@ -207,10 +208,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self initBtn];
     [self.view addSubview:self.map];
     
-    [self initBtn];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
     [self initAnnotation];
 }
 
